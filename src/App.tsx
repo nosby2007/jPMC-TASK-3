@@ -65,14 +65,9 @@ class App extends Component<{}, IState> {
           <h1 className="App-titre"> Bank & Merge Co Task 2 </h1>
         </header>
         <div className="App-content">
-          <button className="btn btn-outline-info Stream-button"
-            // when button is click, our react app tries to request
-            // new data from the server.
-            // As part of your task, update the getDataFromServer() function
-            // to keep requesting the data every 100ms until the app is closed
-            // or the server does not return anymore data.
+          <button className="btn btn-outline-primary Stream-button"
             onClick={() => {this.getDataFromServer()}}>
-            Lancer le Streaming Des Données
+            Demmarrer
           </button>
           <div className="Graph">
             {this.renderGraph()}
